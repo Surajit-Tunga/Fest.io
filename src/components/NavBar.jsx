@@ -21,16 +21,16 @@ const toggleNavbar =()=> {
   <div className='flex items-center gap-6'> 
     <ul className='hidden lg:flex gap-4 text-xl text-gray-300'>
         <li>
-            <a className=' hover:text-gray-100' href="">Home</a>
+            <a className=' hover:text-orange-400' href="">Home</a>
         </li>
         <li>
-            <a className=' hover:text-gray-100' href="">About</a>
+            <a className=' hover:text-orange-400' href="">About</a>
         </li>
         <li>
-            <a className=' hover:text-gray-100' href="">Schedule</a>
+            <a className=' hover:text-orange-400' href="">Schedule</a>
         </li>
         <li>
-            <a className=' hover:text-gray-100' href="">Team</a>
+            <a className=' hover:text-orange-400' href="">Team</a>
         </li>
     </ul>
     <button className='hidden lg:flex bg-gradient-to-r from-orange-500 to-orange-800 rounded-full py-2 px-3'>
