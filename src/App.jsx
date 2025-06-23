@@ -27,8 +27,8 @@ const App = () => {
               <div className='h-[700px]  relative '>
                  <video autoPlay loop muted src={bghero}className=' fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]'></video>
                  <Hero/>
-                 <About/>
               </div>
+              <About/>
             </>
                     } />
           <Route path="/team" element={<Team />} />
