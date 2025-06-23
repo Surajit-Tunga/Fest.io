@@ -43,7 +43,7 @@ const toggleNavbar =()=> {
           </div>
   </div>
   {mobileDrawerOpen && (
-       <div className="fixed top-20 right-4 left-4 mx-auto z-40 bg-black/10 backdrop-blur rounded-xl py-6 px-4 w-[90%] sm:w-[70%] lg:hidden shadow-lg transition-all duration-300">
+       <div className="fixed top-20 right-4 left-4 mx-auto z-40 bg-black  border border-gray-700 rounded-xl py-6 px-4 w-[90%] sm:w-[70%] lg:hidden shadow-lg transition-all duration-300">
            <ul className="flex flex-col items-center gap-4 text-white text-lg">
                   <li><a className='hover:text-orange-400' href="#" onClick={handleClose}>Home</a></li>
                   <li><a className='hover:text-orange-400' href="#" onClick={handleClose}>About</a></li>
@@ -59,12 +59,6 @@ const toggleNavbar =()=> {
   )}
 
 </header>
-
-
-
-
-
-
 </>
   )
 }
