@@ -1,12 +1,71 @@
-import React from 'react'
+import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-const Contact = () => {
+const ContactForm = () => {
   return (
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet fugiat inventore? Fugiat, similique. Corrupti iste voluptatum fugit sint! Ut et suscipit voluptatum, sapiente, doloremque quasi possimus eveniet consectetur earum dolorem hic iusto nostrum ipsum deleniti ducimus tempora incidunt tempore non eos inventore vero sequi quo qui error. Mollitia, quam, sapiente fugiat aut dicta sequi cupiditate dolorem ipsam facere quasi non doloremque, accusantium fuga dolores reprehenderit. Blanditiis, dolores eos! Omnis libero culpa, neque veniam quibusdam reprehenderit fugit adipisci suscipit dignissimos laudantium iusto provident. A officiis dignissimos cum in animi, maiores voluptates quod odio incidunt sapiente iusto saepe, tenetur officia labore!</p>
-      
-    </div>
-  )
-}
+    <div className=" text-white mt-40 min-h-screen flex flex-col items-center justify-center px-4 py-10">
+      <div className="w-full max-w-2xl bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h2 className="text-3xl font-bold mb-6 text-center text-orange-400">Contact Us</h2>
 
-export default Contact
+        <form className="space-y-5">
+          <div>
+            <label className="block mb-1 font-medium">Name</label>
+            <input
+              type="text"
+              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 font-medium">Email</label>
+            <input
+              type="email"
+              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
+              placeholder="Your email"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 font-medium">Message</label>
+            <textarea
+              rows="4"
+              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <div className="mt-8 text-center">
+          <p className="mb-4 text-gray-400">Follow us on</p>
+          <div className="flex justify-center gap-6 text-xl">
+            <a href="#" className="hover:text-orange-400 transition duration-300">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition duration-300">
+              <FaTwitter />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition duration-300">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-orange-400 transition duration-300">
+              <FaLinkedinIn />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContactForm;
