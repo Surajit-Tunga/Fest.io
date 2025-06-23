@@ -5,12 +5,14 @@ import bghero from "./assets/bghero.mp4"
 import About from './components/About'
 import Team from './components/Team'
 import Contact from './components/Contact'
+import Event from './components/Events'
 
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+
 
 
 const App = () => {
@@ -28,7 +30,11 @@ const App = () => {
                  <video autoPlay loop muted src={bghero}className=' fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]'></video>
                  <Hero/>
               </div>
-              <About/>
+              <div className="bg-black">
+                 <About/>
+                 <Event/>
+              </div>
+              
             </>
                     } />
           <Route path="/team" element={<Team />} />
