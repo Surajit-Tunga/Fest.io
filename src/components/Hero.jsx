@@ -9,10 +9,10 @@ const Hero = () => {
           <h1 className="text-6xl font-bold sm:text-7xl lg:text-9xl text-center tracking-wide bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
             Fest.io 
           </h1>
-          <p className='mt-8 font-bold text-lg text-center text-neutral-500 '>
+          <p className='mt-8 font-bold text-lg text-center '>
             Organised by
           </p>
-          <p className="my-2 text-lg text-center text-neutral-500 max-w-4xl tracking-wide">
+          <p className="my-2 text-lg text-center  max-w-4xl tracking-wide">
             Lorem ipsum dolor sit amet.
           </p>
           <div className=" my-8 flex flex-col sm:flex-row items-center justify-center">
