@@ -42,7 +42,9 @@ const App = () => {
               </div>
               
             </>
-                    } />
+                    } /> 
+                    
+          <Route path="/events" element={<Event/>} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
       </Routes>

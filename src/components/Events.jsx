@@ -55,7 +55,7 @@ const eventList = [
 const Event = () => {
 
   return (
-    <section className="py-16 px-6 md:px-20">
+    <section className="py-16 mt-20 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-12 border-l-4 border-orange-500 pl-4">
           Explore <span className="text-orange-500">Events</span>
         </h2>
