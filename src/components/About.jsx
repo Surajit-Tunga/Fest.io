@@ -12,7 +12,7 @@ const About = () => {
               <br /><br />
               Join us for thrilling competitions, inspiring talks, hands-on workshops, and immersive exhibitions. At Fest.io, we don’t just celebrate ideas — we ignite them.
            </p>
-</div>
+      </div>
 
 
   )

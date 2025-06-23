@@ -6,12 +6,16 @@ import About from './components/About'
 import Team from './components/Team'
 import Contact from './components/Contact'
 import Event from './components/Events'
+import Sponcers from './components/Sponcers'
+import FAQ from './components/FAQ'
+import Footer from './components/Footer'
 
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+
 
 
 
@@ -33,6 +37,8 @@ const App = () => {
               <div className="bg-black">
                  <About/>
                  <Event/>
+                 <Sponcers/>
+                 <FAQ/>
               </div>
               
             </>
@@ -40,7 +46,7 @@ const App = () => {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer/>  */}
+      <Footer/>
     </Router>
       
       
