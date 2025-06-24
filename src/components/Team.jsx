@@ -1,5 +1,9 @@
 import Chair from "./team/Chair"
 import Ccv from "./team/Ccv"
+import Media from './team/Media'
+import Web from "./team/Web"
+import Market from "./team/Market"
+import Voll from "./team/Voll"
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,9 +29,10 @@ const CoreTeam = () => {
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
         <Ccv/>
-        <p>
-          Updated Soon......
-        </p>
+        <Media/>
+        <Web/>
+        <Market/>
+        <Voll/>
       </div>
     </section>
   );
