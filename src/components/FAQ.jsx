@@ -23,21 +23,22 @@ const FAQ = () => {
   };
 
   return (
-    <section className=" py-16 px-6">
-      <div className="max-w-4xl mx-auto">
-         <h1 className="text-3xl md:text-4xl text-orange-500 font-extrabold mb-6 border-l-4 border-orange-500 pl-4">
-               FAQ 
+  <>
+      <div className=" pt-6 px-6 md:px-20">
+           <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-orange-500 border-l-4 border-orange-500 pl-4">
+               FAQs
            </h1>
-        <div className="space-y-6">
+           <p className="text-5xl mx-10">
+          Frequenly Asked Questions
+        </p>
+        <p className="mx-10 mt-4 text-orange-50">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, temporibus!
+        </p>
+        <div className="space-y-6 lg:px-40 py-10">
           {faqData.map((item, index) => (
-            <div
-              key={index}
-              className="border border-gray-700 rounded-xl p-5 bg-gray-800"
-            >
-              <button
-                className="w-full text-left font-medium text-lg flex justify-between items-center focus:outline-none"
-                onClick={() => toggleFAQ(index)}
-              >
+            <div key={index} className="border hover:border-orange-400 border-gray-700 rounded-xl p-5 bg-gray-800">
+              <button className="w-full text-left font-medium text-lg flex justify-between items-center focus:outline-none"
+                onClick={() => toggleFAQ(index)}>
                 <span>{item.question}</span>
                 <span>{openIndex === index ? "−" : "+"}</span>
               </button>
@@ -46,9 +47,13 @@ const FAQ = () => {
               )}
             </div>
           ))}
-        </div>
+        </div>          
       </div>
-    </section>
+  
+  
+  
+  
+  </>
   );
 };
 
@@ -56,9 +61,5 @@ export default FAQ;
 
 
 
-<div className=" py-12 px-6 md:px-20">
-           <h1 className="text-3xl md:text-4xl text-orange-500 font-extrabold mb-6 border-l-4 border-orange-500 pl-4">
-               FAQ 
-           </h1>
 
-</div>
+
