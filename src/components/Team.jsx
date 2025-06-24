@@ -1,6 +1,5 @@
 import Chair from "./team/Chair"
 import Ccv from "./team/Ccv"
-import Media from './team/Media'
 import Web from "./team/Web"
 import Market from "./team/Market"
 import Voll from "./team/Voll"
@@ -29,7 +28,6 @@ const CoreTeam = () => {
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
         <Ccv/>
-        <Media/>
         <Web/>
         <Market/>
         <Voll/>
