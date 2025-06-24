@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const EventHeads = [
   { Name: "Aarav Mehta", Designation: "4th Year, CSE", Event: "Hackathon" },
@@ -14,9 +16,14 @@ const EventHeads = [
 ];
 
 const Event = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="text-white py-16 px-4">
-      <h1 className="text-4xl font-bold mb-14 text-center text-orange-400">
+      <h1 className="text-4xl font-bold mb-14 text-center text-orange-400" data-aos="fade-up">
         Event Heads
       </h1>
 
@@ -27,6 +34,7 @@ const Event = () => {
             className="relative w-72 backdrop-blur-sm bg-transparent border border-orange-400/30 rounded-2xl p-6 
                        shadow-none hover:shadow-[0_8px_30px_-10px_rgba(255,165,0,0.25)] 
                        transition duration-300 text-center"
+                       data-aos="fade-up" data-aos-delay={index * 100}
           >
             {/* Smaller Event Badge */}
             <div className="absolute top-2 right-2 bg-orange-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-medium tracking-wide uppercase">

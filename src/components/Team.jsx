@@ -29,13 +29,13 @@ const CoreTeam = () => {
         </p>
       </div>
       <div className="max-w-3xl mx-auto text-center">
-        <div data-aos="fade-up" data-aos-delay="300"><Chair /></div>
-        <div data-aos="fade-up" data-aos-delay="400"><Conv /></div>
-        <div data-aos="fade-up" data-aos-delay="500"><Market /></div>
-        <div data-aos="fade-up" data-aos-delay="600"><Media /></div>
-        <div data-aos="fade-up" data-aos-delay="700"><Web /></div>
-        <div data-aos="fade-up" data-aos-delay="800"><EventHead /></div>
-        <div data-aos="fade-up" data-aos-delay="900"><Voll /></div>
+        <Chair/>
+        <Conv/>
+        <Market/>
+        <Media/>
+        <Web/>
+        <EventHead/>
+        <Voll/>
       </div>
     </section>
   );

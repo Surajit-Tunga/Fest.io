@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Volunteers = [
   { Name: "Aryan Ghosh", Designation: "4th Year, CSE", Role: "Head" },
   { Name: "Isha Kapoor", Designation: "3rd Year, IT", Role: "Co-Head" },
 
-  // 35 volunteers (you can replace names if needed)
+  // 35 volunteers
   ...Array.from({ length: 35 }, (_, i) => ({
     Name: `Volunteer ${i + 1}`,
     Designation: `${(i % 4) + 1}th Year, ${["CSE", "IT", "ECE", "EE"][i % 4]}`,
@@ -13,9 +15,16 @@ const Volunteers = [
 ];
 
 const Voll = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="text-white py-16 px-4">
-      <h1 className="text-4xl font-bold mb-14 text-center text-orange-400">
+      <h1
+        className="text-4xl font-bold mb-14 text-center text-orange-400"
+        data-aos="fade-up"
+      >
         Volunteer Team
       </h1>
 
@@ -23,6 +32,8 @@ const Voll = () => {
         {Volunteers.map((person, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 40}
             className="relative w-72 backdrop-blur-sm bg-transparent border border-orange-400/30 rounded-2xl p-6 
                        shadow-none hover:shadow-[0_8px_30px_-10px_rgba(255,165,0,0.25)] 
                        transition duration-300 text-center"

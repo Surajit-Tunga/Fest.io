@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MediaTeam = [
   {
@@ -34,9 +36,14 @@ const MediaTeam = [
 ];
 
 const Media = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   return (
     <div className="text-white py-16 px-4">
-      <h1 className="text-4xl font-bold mb-14 text-center text-orange-400">
+      <h1 className="text-4xl font-bold mb-14 text-center text-orange-400"data-aos="fade-up">
         Media Team
       </h1>
 
@@ -47,6 +54,8 @@ const Media = () => {
             className="relative w-72 backdrop-blur-sm bg-transparent border border-orange-400/30 rounded-2xl p-6 
                        shadow-none hover:shadow-[0_8px_30px_-10px_rgba(255,165,0,0.25)] 
                        transition duration-300 text-center"
+                       data-aos="fade-up" data-aos-delay={index * 100}
+
           >
             {/* Badge for Head/Co-Head */}
             {person.Role !== "Member" && (
