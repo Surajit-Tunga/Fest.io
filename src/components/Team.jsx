@@ -1,6 +1,5 @@
 import Chair from "./team/Chair"
 import Ccv from "./team/Ccv"
-import Voll from "./team/Voll"
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +25,9 @@ const CoreTeam = () => {
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
         <Ccv/>
-        <Voll/>
+       <P>
+        Updated Soon................
+       </P>
       </div>
     </section>
   );
