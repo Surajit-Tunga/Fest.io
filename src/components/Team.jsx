@@ -1,9 +1,9 @@
 import Chair from "./team/Chair";
 import Conv from "./team/Conv";
-import Market from "./team/Market";
-import Media from "./team/Media";
+import Market from "./team/market";
+import Media from "./team/media";
 import Web from "./team/web";
-import Voll from "./team/Voll";
+import Voll from "./team/voll";
 import EventHead from "./team/EventHead";
 
 import React, { useEffect } from "react";
