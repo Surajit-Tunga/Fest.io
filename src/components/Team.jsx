@@ -21,9 +21,9 @@ const CoreTeam = () => {
         </p>
       </div>
       <div className="max-w-3xl mx-auto text-center">
-       <P>
-        Updated Soon................
-       </P>
+     <p>
+      Updated Soon...............................
+     </p>
       </div>
     </section>
   );
