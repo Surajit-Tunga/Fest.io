@@ -1,89 +1,101 @@
-import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import React, { useEffect } from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const ContactForm = () => {
+const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="min-h-screen text-white flex items-center justify-center px-4 pt-24 pb-10 bg-black">
-      <div className="w-full max-w-2xl bg-gray-900 rounded-2xl shadow-lg p-8">
-        <h2 className="text-3xl font-bold mb-2 text-center text-orange-400">Contact Our Team</h2>
-        <p className="text-center text-gray-400 mb-8">We’ll get back to you within 24 hours</p>
+    <div className="min-h-screen bg-black text-white py-16 px-4 flex flex-col justify-center items-center">
+      <div className="w-full max-w-md space-y-6 mt-10" data-aos="fade-up">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold">Contact <span className='text-orange-500'>Our Team</span></h2>
+          <p className="text-sm text-gray-400">Our team will get back to you within 24 hrs</p>
+        </div>
 
-        {/* Replace action URL with your real Formspree endpoint */}
-        <form
-          action="https://formspree.io/f/mnqwe123"
-          method="POST"
-          className="space-y-5"
-        >
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block mb-1 font-medium">First Name</label>
-              <input
-                type="text"
-                name="firstName"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
-                placeholder="First name"
-                required
-              />
-            </div>
-            <div>
-              <label className="block mb-1 font-medium">Last Name</label>
-              <input
-                type="text"
-                name="lastName"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
-                placeholder="Last name"
-                required
-              />
-            </div>
-          </div>
-
+        <form className="space-y-4">
+          {/* First Name */}
           <div>
-            <label className="block mb-1 font-medium">Email Address</label>
+            <label htmlFor="firstName" className="block text-sm mb-1">First Name</label>
             <input
-              type="email"
-              name="email"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Your email"
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your first name"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition"
               required
             />
           </div>
 
+          {/* Last Name */}
           <div>
-            <label className="block mb-1 font-medium">Message</label>
-            <textarea
-              name="message"
-              rows="4"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
-              placeholder="Write your message here"
+            <label htmlFor="lastName" className="block text-sm mb-1">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your last name"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition"
               required
-            ></textarea>
+            />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg transition duration-300"
-          >
-            Send →
-          </button>
+          {/* Email */}
+          <div>
+            <label htmlFor="email" className="block text-sm mb-1">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="yourname@example.com"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition"
+              required
+            />
+          </div>
+
+          {/* Message */}
+          <div>
+            <label htmlFor="message" className="block text-sm mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here"
+              rows="4"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition resize-none"
+              required
+            />
+          </div>
+
+          {/* Submit Button */}
+          <div>
+            <button
+              type="submit"
+              className="w-full bg-gray-800 text-white border border-gray-600 rounded-md py-2 
+                         hover:bg-orange-400 hover:text-black hover:scale-105 transition-transform duration-300"
+            >
+              Send →
+            </button>
+          </div>
         </form>
 
-        <div className="mt-10">
-          <p className="mb-4 text-gray-400 text-center">Follow us on</p>
-          <div className="flex justify-center gap-6 text-xl text-gray-300">
-            <a href="#" className="hover:text-orange-400 transition" title="Facebook">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-orange-400 transition" title="Instagram">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-orange-400 transition" title="LinkedIn">
-              <FaLinkedinIn />
-            </a>
-          </div>
+        {/* Social Links Inline */}
+        <div className="flex justify-center items-center gap-6 mt-6">
+          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+            <FaFacebook /> <span>Facebook</span>
+          </a>
+          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+            <FaInstagram /> <span>Instagram</span>
+          </a>
+          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+            <FaLinkedin /> <span>LinkedIn</span>
+          </a>
         </div>
       </div>
     </div>
   );
 };
 
-export default ContactForm;
+export default Contact;

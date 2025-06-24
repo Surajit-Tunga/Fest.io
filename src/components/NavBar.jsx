@@ -1,6 +1,8 @@
 
 import {Menu, X} from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const NavBar = () => {
 
@@ -12,9 +14,13 @@ const toggleNavbar =()=> {
     setMobileDrawerOpen(false);
   };
 
+useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
   return (
 <>
-<header className='bg-black  flex justify-between items-center p-3 fixed top-4 left-0 right-0  w-11/12 xl:w-10/12 mx-auto rounded-full border border-gray-700 '>
+<header className='bg-black  flex justify-between items-center p-3 fixed top-4 left-0 right-0  w-11/12 xl:w-10/12 mx-auto rounded-full border border-gray-700 ' data-aos="fade-down">
   <div className='pl-3 font-bold text-xl'>
     Fest.io
   </div>
@@ -43,7 +49,7 @@ const toggleNavbar =()=> {
           </div>
   </div>
   {mobileDrawerOpen && (
-       <div className="fixed top-20 right-4 left-4 mx-auto z-40 bg-black  border border-gray-700 rounded-xl py-6 px-4 w-[90%] sm:w-[70%] lg:hidden shadow-lg transition-all duration-300">
+       <div className="fixed top-20 right-4 left-4 mx-auto z-40 bg-black  border border-gray-700 rounded-xl py-6 px-4 w-[90%] sm:w-[70%] lg:hidden shadow-lg transition-all duration-300" data-aos="fade-down">
            <ul className="flex flex-col items-center gap-4 text-white text-lg">
                   <li><a className='hover:text-orange-400' href="/" onClick={handleClose}>Home</a></li>
                   <li><a className='hover:text-orange-400' href="/events" onClick={handleClose}>Events</a></li>
