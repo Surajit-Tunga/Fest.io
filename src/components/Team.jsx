@@ -1,5 +1,5 @@
 import Chair from "./team/Chair";
-import Conv from "./team/Conv";
+// import Conv from "./team/Conv";
 import Market from "./team/market";
 import Media from "./team/media";
 import Web from "./team/web";
@@ -30,7 +30,7 @@ const CoreTeam = () => {
       </div>
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
-        <Conv/>
+        {/* <Conv/> */}
         <Market/>
         <Media/>
         <Web/>
