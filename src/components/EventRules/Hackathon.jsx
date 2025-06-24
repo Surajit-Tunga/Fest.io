@@ -50,8 +50,7 @@ const Hackathon = ({ onClose }) => {
         <section className="space-y-2">
           <h2 className="text-2xl font-semibold text-orange-300">📞 Event Coordinators</h2>
           <ul className="text-sm text-gray-300 space-y-1">
-            <li><span className="font-medium text-white">Surajit Tunga:</span> +91 98765 43210</li>
-            <li><span className="font-medium text-white">Priya Das:</span> +91 91234 56789</li>
+            <li><span className="font-medium text-white">Surajit Tunga:</span> +91 00000 11111</li>
           </ul>
         </section>
       </div>
