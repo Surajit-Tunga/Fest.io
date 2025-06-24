@@ -6,16 +6,6 @@ import Web from "./team/web";
 import Voll from "./team/Voll";
 
 
-const teamMembers = [
-  {
-    name: "Surajit Tunga",
-    role: "Team Lead",
-    linkedin: "#",
-    github: "#",
-    twitter: "#",
-  },
-];
-
 const CoreTeam = () => {
   return (
     <section className="mt-20 text-white py-10 px-6">
@@ -23,6 +13,12 @@ const CoreTeam = () => {
            <h1 className="text-3xl md:text-4xl font-extrabold mb-6 border-l-4 border-orange-500 pl-5">
                Meet Our <span className="text-orange-500">Core Team</span>
         </h1>
+        <p className="text-5xl mx-10">
+          Lorem, ipsum dolor.
+        </p>
+        <p className="mx-10 mt-4 text-orange-50">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, temporibus!
+        </p>
       </div>
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
