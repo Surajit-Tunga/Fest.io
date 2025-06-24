@@ -1,10 +1,3 @@
-import Chair from "./team/Chair";
-import Conv from "./team/Conv";
-import Market from "./team/market";
-import Media from "./team/media";
-import Web from "./team/web";
-import Voll from "./team/voll";
-import EventHead from "./team/EventHead";
 
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -29,13 +22,9 @@ const CoreTeam = () => {
         </p>
       </div>
       <div className="max-w-3xl mx-auto text-center">
-        <Chair/>
-        <Conv/>
-        <Market/>
-        <Media/>
-        <Web/>
-        <EventHead/>
-        <Voll/>
+        <p>
+          Updated Soon......
+        </p>
       </div>
     </section>
   );
