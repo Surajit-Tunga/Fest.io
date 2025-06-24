@@ -15,7 +15,7 @@ const Chair = () => {
   return (
     <div className="text-white py-16 px-4">
       <h1 className="text-4xl font-bold mb-14 text-center text-orange-400">
-        College Leadership
+        Chair Person
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 place-items-center">

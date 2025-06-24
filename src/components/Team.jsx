@@ -4,6 +4,7 @@ import Market from "./team/Market";
 import Media from "./team/Media";
 import Web from "./team/web";
 import Voll from "./team/Voll";
+import EventHead from "./team/EventHead";
 
 
 const CoreTeam = () => {
@@ -26,18 +27,8 @@ const CoreTeam = () => {
         <Market/>
         <Media/>
         <Web/>
+        <EventHead/>
         <Voll/>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 border border-gray-700 p-2 rounded-xl shadow-md hover:shadow-orange-500/30 transition"
-            >
-              <h3 className="text-2xl font-semibold mb-1 text-orange-300">{member.name}</h3>
-              <p className="text-gray-400 mb-4">{member.role}</p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </section>
   );
