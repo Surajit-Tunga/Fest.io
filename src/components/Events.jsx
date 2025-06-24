@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import event1 from "../assets/EventPhoto/event1.jpeg";
 import event2 from "../assets/EventPhoto/event2.png";
 import Chess from "../components/EventRules/Chess.jsx";
@@ -70,13 +72,17 @@ const Event = () => {
     setSelectedEvent(eventData);
   };
 
+    useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   return (
     <section className="py-16 mt-20 px-6 md:px-20 relative">
-      <h2 className="text-3xl md:text-4xl font-extrabold mb-12 border-l-4 border-orange-500 pl-4">
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-12 border-l-4 border-orange-500 pl-4" data-aos="fade-up">
         Explore <span className="text-orange-500">Events</span>
       </h2>
-      <p className="text-5xl mx-10">See What’s Going On</p>
-      <p className="mx-10 mt-4 text-orange-50">
+      <p className="text-5xl mx-10" data-aos="fade-up" data-aos-delay="200">See What’s Going On</p>
+      <p className="mx-10 mt-4 text-orange-50"data-aos="fade-up" data-aos-delay="350">
         Unslash your Creativity. Lorem ipsum, dolor sit amet consectetur
         adipisicing elit. Distinctio, temporibus!
       </p>
@@ -88,6 +94,7 @@ const Event = () => {
               key={index}
               onClick={() => handleClick(data)}
               className="w-full max-w-sm mx-auto cursor-pointer"
+              data-aos="fade-up" data-aos-delay={index * 100}
             >
               <div className="bg-[#100420] border border-orange-500 rounded-2xl overflow-hidden shadow-md hover:shadow-orange-700 transition duration-300">
                 <img
