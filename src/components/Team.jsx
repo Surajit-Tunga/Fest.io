@@ -1,6 +1,6 @@
 import Chair from "./team/Chair"
 import Ccv from "./team/Ccv"
-import Web from "./team/Web"
+import Website from "./team/Website"
 import Market from "./team/Market"
 import Voll from "./team/Voll"
 import React, { useEffect } from "react";
@@ -28,7 +28,7 @@ const CoreTeam = () => {
       <div className="max-w-3xl mx-auto text-center">
         <Chair/>
         <Ccv/>
-        <Web/>
+        <Website/>
         <Market/>
         <Voll/>
       </div>
