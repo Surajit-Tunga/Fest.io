@@ -25,7 +25,7 @@ const Contact = () => {
               id="Name"
               name="Name"
               placeholder="Enter your  name"
-              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-600 transition"
               required
             />
           </div>
@@ -38,7 +38,7 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="yourname@example.com"
-              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-400 transition"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:border-orange-600 transition"
               required
             />
           </div>
@@ -51,7 +51,7 @@ const Contact = () => {
               name="message"
               placeholder="Write your message here"
               rows="4"
-              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-1 focus:outline-none focus:border-orange-400 transition resize-none"
+              className="w-full bg-transparent border border-gray-700 rounded-md px-3 py-1 focus:outline-none focus:border-orange-600 transition resize-none"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const Contact = () => {
             <button
               type="submit"
               className="w-full bg-gray-800 text-white border border-gray-600 rounded-md py-2 
-                         hover:bg-orange-400 hover:text-black hover:scale-105 transition-transform duration-300"
+                         hover:bg-orange-700 hover:text-black hover:scale-105 transition-transform duration-300"
             >
               Send →
             </button>
@@ -70,13 +70,13 @@ const Contact = () => {
 
         {/* Social Links Inline */}
         <div className="flex justify-center items-center gap-6 mt-6"data-aos="fade-up" data-aos-delay="250">
-          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+          <a href="#" className="flex items-center gap-2 hover:text-orange-600 transition">
             <FaFacebook /> <span>Facebook</span>
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+          <a href="#" className="flex items-center gap-2 hover:text-orange-600 transition">
             <FaInstagram /> <span>Instagram</span>
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-orange-400 transition">
+          <a href="#" className="flex items-center gap-2 hover:text-orange-600 transition">
             <FaLinkedin /> <span>LinkedIn</span>
           </a>
         </div>

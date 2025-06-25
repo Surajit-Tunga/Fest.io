@@ -21,22 +21,22 @@ useEffect(() => {
   return (
 <>
 <header className='bg-black  flex justify-between items-center p-3 fixed top-4 left-0 right-0  w-11/12 xl:w-10/12 mx-auto rounded-full border border-gray-700 ' data-aos="fade-down">
-  <div className='pl-3 font-bold text-xl'>
+  <div className='pl-3 font-bold text-orange-700 text-xl'>
     Fest.io
   </div>
   <div className='flex items-center gap-6'> 
     <ul className='hidden lg:flex gap-4 text-xl text-gray-300'>
         <li>
-            <a className=' hover:text-orange-400' href="/">Home</a>
+            <a className=' hover:text-orange-600' href="/">Home</a>
         </li>
         <li>
-            <a className=' hover:text-orange-400' href="/events">Events</a>
+            <a className=' hover:text-orange-600' href="/events">Events</a>
         </li>
         <li>
-            <a className=' hover:text-orange-400' href="/team">Team</a>
+            <a className=' hover:text-orange-600' href="/team">Team</a>
         </li>
         <li>
-            <a className=' hover:text-orange-400' href="/contact">Contact Us</a>
+            <a className=' hover:text-orange-600' href="/contact">Contact Us</a>
         </li>
     </ul>
     <button className='hidden lg:flex bg-gradient-to-r from-orange-500 to-orange-800 hover:from-orange-700 hover:to-orange-900 rounded-full py-2 px-3'>
@@ -51,10 +51,10 @@ useEffect(() => {
   {mobileDrawerOpen && (
        <div className="fixed top-20 right-4 left-4 mx-auto z-40 bg-black  border border-gray-700 rounded-xl py-6 px-4 w-[90%] sm:w-[70%] lg:hidden shadow-lg transition-all duration-300" data-aos="fade-down">
            <ul className="flex flex-col items-center gap-4 text-white text-lg">
-                  <li><a className='hover:text-orange-400' href="/" onClick={handleClose}>Home</a></li>
-                  <li><a className='hover:text-orange-400' href="/events" onClick={handleClose}>Events</a></li>
-                  <li><a className='hover:text-orange-400' href="/team" onClick={handleClose}>Team</a></li>
-                  <li><a className='hover:text-orange-400' href="/contact" onClick={handleClose}>Contact Us</a></li>
+                  <li><a className='hover:text-orange-600' href="/" onClick={handleClose}>Home</a></li>
+                  <li><a className='hover:text-orange-600' href="/events" onClick={handleClose}>Events</a></li>
+                  <li><a className='hover:text-orange-600' href="/team" onClick={handleClose}>Team</a></li>
+                  <li><a className='hover:text-orange-600' href="/contact" onClick={handleClose}>Contact Us</a></li>
           </ul>
           <button
                 onClick={handleClose}
